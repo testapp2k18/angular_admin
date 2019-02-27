@@ -5,32 +5,20 @@
 		<li>
 			<a routerLink="/dashboard/home"
 				[routerLinkActive]="['router-link-active']" class="list-group-item">
-				Dashboard
+				<i class="fa fa-fw fa-tachometer"></i> Dashboard
 			</a>	
 		</li>
 		<li>
 			<a [routerLink]="['myprofile']"
 				[routerLinkActive]="['router-link-active']" class="list-group-item">
-				Manage Profile
+				<i class="fa fa-fw fa-user"></i> Manage Profile
 			</a>
 		</li>
 		<li>
 			<a [routerLink]="['users']"
 				[routerLinkActive]="['router-link-active']" class="list-group-item">
-				<i class="fa fa-fw fa-edit"></i> Manage User
+				<i class="fa fa-fw fa-users"></i>  Manage User
 			</a>
 		</li>
-		<li>
-			<a [routerLink]="['store']"
-				[routerLinkActive]="['router-link-active']" class="list-group-item">
-				<i class="fa fa-fw fa-edit"></i> Manage Store
-			</a>
-		</li>
-		<!-- <li>
-			<a [routerLink]="['store']"
-				[routerLinkActive]="['router-link-active']" class="list-group-item">
-				<i class="fa fa-fw fa-edit"></i> Manage Store
-			</a>
-		</li> -->
 	</ul>
 </nav>
