@@ -1,0 +1,31 @@
+<div class="container-fluid">
+	<h2 class="text-muted">
+		Dashboard <small>Statistics Overview</small>
+	</h2>
+	
+	<div class="row">
+		<!-- Agency Owner -->
+		<div class="col-xl-4 col-lg-6" *ngIf="userRole === 'admin'">
+			<div class="borcard0 card card-warning card-inverse">
+				<div class="card-header card-warning">
+					<div class="row">
+						<div class="col-xs-3">
+							<i class="fa fa-users fa-5x"></i>
+						</div>
+						<div class="col-xs-9 text-xs-right">
+							<div class="huge">{{totalUser}}</div>
+							<div>Users</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer card-yellow">
+					<a class="text-warning" [routerLink]="['/dashboard/users']"> <span
+						class="pull-xs-left">View Details</span> <span
+						class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
+						<div class="clearfix"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
